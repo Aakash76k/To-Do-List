@@ -38,7 +38,7 @@ function List() {
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-purple-800 px-4">
-      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+      <div className="bg-white p-6 rounded-lg shadow-lg w-full max-w-md flex flex-col">
         <h1 className="text-2xl font-bold text-center mb-4">
           Todo List
         </h1>
@@ -65,7 +65,7 @@ function List() {
           </button>
         </div>
 
-        <ul className="mt-4">
+        <ul className="mt-4 overflow-y-auto max-h-[400px]">
           {todos.map((todo, index) => (
             <li
               key={index}
